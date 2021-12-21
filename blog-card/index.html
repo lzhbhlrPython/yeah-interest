@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Blog Card</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="./style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="container">
+  <blog-card></blog-card>
+</div>
+
+<script type="text/x-template" id="blog-card">
+<a class="card-link" href="#">
+  <article class="blog-card">
+    <img class="post-image" :src="image" />
+    <div class="article-details">
+      <h4 class="post-category">{{ category }}</h4>
+      <h3 class="post-title">{{ name }}</h3>
+      <p class="post-description">{{ desc }}</p>
+      <p class="post-author">By {{ author }}</p>
+    </div>
+  </article>
+</a>
+</script>
+<!-- partial -->
+  <script src='https://unpkg.com/vue'></script><script  src="./script.js"></script>
+
+</body>
+</html>
